@@ -1,0 +1,11 @@
+// package.json
+{
+  "name": "stagepay-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install --prefix frontend",
+    "build:contract": "cargo build --target wasm32-unknown-unknown --release",
+    "start:frontend": "npm run dev --prefix frontend",
+    "dev": "npm run start:frontend"
+  }
+}
